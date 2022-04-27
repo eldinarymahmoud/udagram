@@ -19,6 +19,7 @@ import { V0_FEED_MODELS, V0_USER_MODELS } from "./controllers/v0/model.index";
 
   const app = express();
   const port = process.env.PORT || 8080;
+  const host = process.env.POSTGRES_HOST;
 
   app.use(bodyParser.json());
 
@@ -28,7 +29,7 @@ import { V0_FEED_MODELS, V0_USER_MODELS } from "./controllers/v0/model.index";
 
   // Root URI call
   app.get("/", async (req, res) => {
-    res.send("/api/v0/");
+    res.send("Hello There this is the main page from Dinary" + "/api/v0/");
   });
 
   // Start the Server
