@@ -11,12 +11,10 @@
     "experimentalDecorators": true,
     "importHelpers": true,
     "target": "es5",
+    "disableTypeScriptVersionCheck": true,
     "typeRoots": [
       "node_modules/@types"
     ],
-    "angularCompilerOptions": {
-      "disableTypeScriptVersionCheck": true
-    },
     "lib": [
       "es2018",
       "dom"
