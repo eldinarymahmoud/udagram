@@ -36,7 +36,6 @@ jobs:
           name: front-End deploy app
           command: |
             yarn run frontend:deploy
-    steps:
       - aws-elastic-beanstalk/setup
       - run:
           name: back-End deploy app
