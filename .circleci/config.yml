@@ -1,3 +1,6 @@
+# This is the pipeline for deployment of the udagram application
+# Starting by setting up the environemtn, install dependencies, 
+# run the builds and deploy
 version: 2.1
 orbs:
   node: circleci/node@5.0.2
@@ -32,3 +35,7 @@ jobs:
           name: front-End deploy app
           command: |
             yarn run frontend:deploy
+      - run:
+          name: back-End deploy app
+          command: |
+            yarn run backend:deploy
