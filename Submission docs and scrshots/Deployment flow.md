@@ -14,6 +14,7 @@ The build flow goes as below:
 - Check out code
 - Installing yarn
 - Install AWS CLI
+- Install elasticbeanstlak
 - Disable AWS pager
 - Configure:
     - AWS access key id
@@ -25,3 +26,4 @@ The build flow goes as below:
 - Building the back end
 - Deploying the front end via the command
 ```aws s3 cp --recursive ./www s3://mahmoudeldinary-udagram/``` presented in udagram-frontend/bin/deploy.sh.
+- Deploying the backend end via elasticbeanstlak
