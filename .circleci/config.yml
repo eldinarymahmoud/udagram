@@ -16,7 +16,7 @@ jobs:
       - node/install-yarn:
           version: 1.22.4
       - aws-cli/setup
-      - eb/setup
+      - aws-elastic-beanstalk/setup
       - run:
           name: Front-End Install
           command: |
