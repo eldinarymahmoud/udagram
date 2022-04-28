@@ -11,6 +11,7 @@ jobs:
       - checkout
       - node/install-yarn:
           version: 1.22.4
+      - aws-cli/setup
       - run:
           name: Front-End Install
           command: |
@@ -27,3 +28,7 @@ jobs:
           name: Back-End Build
           command: |
             yarn run backend:build
+      - run:
+          name: front-End deploy app
+          command: |
+            yarn run frontend:deploy
