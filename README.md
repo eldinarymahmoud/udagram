@@ -28,4 +28,9 @@ The e2e tests are using Protractor and Jasmine.
 - [Node](https://nodejs.org) - Javascript Runtime
 - [Express](https://expressjs.com/) - Javascript API Framework
 
+## Architecture diagrams
+- This project ifrastructure architecture diagram can be found in the root folder ./Udagram_infradiagram.drawio
+
+![architecture diagram](./Submission%20docs%20and%20scrshots/Screenshot%202022-04-28%20182337.png)
+
 ### This project's first version was deployed 28 april 2022.

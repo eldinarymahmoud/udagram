@@ -12,7 +12,7 @@
     "zip": "bestzip www/Archive.zip www/*",
     "build": "npm run clean && tsc && copyfiles src/config www/config && copyfiles .npmrc www/.npmrc && copyfiles package.json www/package.json && cd www && npm run zip && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "eb use udagram-api-dev && eb deploy udagram-api-dev"
+    "deploy": "eb create udagram-api-dev && eb use udagram-api-dev && eb deploy udagram-api-dev"
   },
   "keywords": [],
   "author": "Gabriel Ruttner",
