@@ -26,4 +26,5 @@ The build flow goes as below:
 - Building the back end
 - Deploying the front end via the command
 ```aws s3 cp --recursive ./www s3://mahmoudeldinary-udagram/``` presented in udagram-frontend/bin/deploy.sh.
+- Setting up elasticbeanstalk via circleCi
 - Deploying the backend end via elasticbeanstlak
